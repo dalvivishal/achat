@@ -1,0 +1,44 @@
+/* ChatPage.css */
+
+/* Main container for the chat page */
+.chatPageContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styling */
+.chatPageContainer > :first-child {
+  flex: 0 0 250px; /* Sidebar takes a fixed width */
+  background-color: #3b82f6;
+  color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Main chat area (ChatWindow) */
+.chatPageContainer > :last-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chatPageContainer {
+      flex-direction: column;
+  }
+
+  .chatPageContainer > :first-child {
+      flex: 0 0 auto;
+      height: auto;
+  }
+
+  .chatPageContainer > :last-child {
+      flex: 1;
+  }
+}

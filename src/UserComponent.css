@@ -1,0 +1,46 @@
+.user-component {
+  margin-bottom: 24px;
+}
+
+.user-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* User List */
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  margin-bottom: 4px;
+}
+
+.user-link {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ffffff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.user-link:hover {
+  background-color: #e6f7ff; /* Light blue hover effect */
+  color: #0073e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-title {
+    font-size: 1rem;
+  }
+  .user-link {
+    padding: 12px;
+  }
+}

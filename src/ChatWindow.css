@@ -1,0 +1,143 @@
+/* ChatWindow.css */
+
+/* Chat window container */
+.chatWindowContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 1px solid #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+/* Chat window header */
+.chatWindowHeader {
+  padding: 1rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #2563eb;
+}
+
+/* Messages container */
+.messagesContainer {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #f9fafb;
+}
+
+/* Individual message bubble */
+.message {
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  max-width: 70%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Sent message styling */
+.message.sent {
+  align-self: flex-end;
+  background-color: #3b82f6;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Received message styling */
+.message.received {
+  align-self: flex-start;
+  background-color: #e5e7eb;
+  color: #374151;
+  text-align: left;
+}
+
+/* Message text styling */
+.messageText {
+  margin: 0;
+}
+
+/* Message time styling */
+.messageTime {
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #9ca3af;
+}
+
+/* Chat window footer */
+.chatWindowFooter {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Message input field */
+.messageInput {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.messageInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Send button styling */
+.sendButton {
+  margin-left: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.sendButton:hover {
+  background-color: #2563eb;
+}
+
+.sendButton:active {
+  transform: scale(0.98);
+}
+
+.sendButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chatWindowHeader {
+      font-size: 1.2rem;
+      padding: 0.75rem;
+  }
+
+  .message {
+      font-size: 0.85rem;
+  }
+
+  .messageInput {
+      font-size: 0.9rem;
+  }
+
+  .sendButton {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+  }
+}

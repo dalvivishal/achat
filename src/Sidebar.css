@@ -1,0 +1,35 @@
+.sidebar {
+  width: 300px; /* Fixed width for desktop */
+  height: 100vh; /* Full height for a typical chat app sidebar */
+  background-color: #f0f2f5; /* Light gray background */
+  padding: 16px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsive Sidebar for Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+    padding: 12px;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar-title {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}
